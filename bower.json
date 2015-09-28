@@ -1,0 +1,22 @@
+{
+  "name": "sombreetamer.com",
+  "version": "1.0.0",
+  "authors": [
+    "Hugo Bastien <hugobast@gmail.com>"
+  ],
+  "description": "Sombre & Amer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~4.2.4"
+  },
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}

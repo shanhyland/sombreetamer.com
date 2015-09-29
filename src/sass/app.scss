@@ -1,3 +1,98 @@
+@import 'bourbon';
+
 body {
-  
+  @include display(flex);
+  @include flex-direction(column);
+
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 0.7rem;
+  height: 100vh;
+  line-height: 1rem;
+  margin: 0;
+  padding: 50px;
+}
+
+header {
+  @include display(flex);
+  @include flex(1);
+  @include flex-direction(row);
+}
+
+video {
+  @include transform(translateX(-50%) translateY(-50%));
+
+  background: url(/images/background.jpg) no-repeat;
+  background-size: cover;
+
+  height: auto;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  z-index: -100;
+}
+
+strong {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bigger {
+  font-size: 0.9rem;
+}
+
+.blurb {
+  @include display(flex);
+  @include flex(1);
+
+  img {
+    display: block;
+    height: 145px;
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .spacer {
+    height: 145px;
+    margin-bottom: 50px;
+  }
+
+  .left, .right {
+    float: left;
+    width: 320px;
+  }
+
+  .left {
+    margin-right: 50px;
+  }
+}
+
+.contact {
+  @include display(flex);
+
+  img {
+    height: 35px;
+    width: auto;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  a:first-child {
+    color: white;
+    display: inline-block;
+    line-height: 35px;
+    margin-right: 25px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

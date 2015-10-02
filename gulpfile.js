@@ -18,7 +18,8 @@ var config = {
       'src/sass/**/*.scss'
     ],
 
-    html: [
+    site: [
+      'public/**/*.js',
       'public/**/*.html'
     ]
   }
@@ -28,7 +29,7 @@ gulp.task('coffee', function() {
   gulp.src('src/coffee/app.coffee', { read: false })
     .pipe(plumber())
     .pipe(browserify({
-      transform: ['coffeeify'],
+      transform: ['coffeeify', 'debowerify', 'uglifyify'],
 
       extensions: ['.coffee'],
 
@@ -60,5 +61,5 @@ gulp.task('build', ['coffee', 'sass']);
 gulp.task('watch', ['build', 'serve'], function () {
   gulp.watch(config.files.sass, ['sass']);
   gulp.watch(config.files.coffee, ['coffee']);
-  gulp.watch(config.files.html).on('change', browserSync.reload);
+  gulp.watch(config.files.site).on('change', browserSync.reload);
 });

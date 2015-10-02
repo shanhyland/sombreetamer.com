@@ -1,5 +1,10 @@
 @import 'bourbon';
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1)
+}
+
 body {
   @include display(flex);
   @include flex-direction(column);
@@ -9,7 +14,7 @@ body {
   color: white;
   font-family: arial, helvetica, sans-serif;
   font-size: 0.7rem;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1rem;
   margin: 0;
   padding: 50px;
@@ -19,6 +24,12 @@ header {
   @include display(flex);
   @include flex(1);
   @include flex-direction(row);
+}
+
+footer {
+  p {
+    margin: 0;
+  }
 }
 
 video {
@@ -42,6 +53,16 @@ strong {
   text-transform: uppercase;
 }
 
+a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .bigger {
   font-size: 0.9rem;
 }
@@ -49,6 +70,7 @@ strong {
 .blurb {
   @include display(flex);
   @include flex(1);
+  @include flex-direction(column);
 
   img {
     display: block;
@@ -57,14 +79,23 @@ strong {
     width: auto;
   }
 
+  .top {
+    @include display(flex);
+  }
+
+  .bottom {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+
   .spacer {
     height: 145px;
     margin-bottom: 50px;
   }
 
   .left, .right {
-    float: left;
     width: 320px;
+    margin-bottom: 20px;
   }
 
   .left {
@@ -78,21 +109,5 @@ strong {
   img {
     height: 35px;
     width: auto;
-  }
-
-  a {
-    display: inline-block;
-  }
-
-  a:first-child {
-    color: white;
-    display: inline-block;
-    line-height: 35px;
-    margin-right: 25px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }

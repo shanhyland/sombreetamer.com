@@ -14,7 +14,8 @@
     "tests"
   ],
   "devDependencies": {
-    "bourbon": "~4.2.4"
+    "bourbon": "~4.2.4",
+    "zepto-detect": "*"
   },
   "dependencies": {
     "neat": "~1.7.2"

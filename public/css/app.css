@@ -2,6 +2,13 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1); }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
+video::-webkit-media-controls {
+  display: none !important; }
+
 body {
   display: -webkit-box;
   display: -moz-box;
@@ -149,8 +156,11 @@ a {
   .blurb .left, .blurb .right {
     width: 320px;
     margin-bottom: 20px; }
-  .blurb .left {
-    margin-right: 50px; }
+  .blurb .right {
+    margin-left: 50px; }
+    @media only screen and (max-width: 768px) {
+      .blurb .right {
+        margin-left: 0; } }
 
 .contact {
   display: -webkit-box;

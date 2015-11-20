@@ -36,6 +36,52 @@ header {
 }
 
 footer {
+  @include display(flex);
+  @include flex-direction(row);
+
+  .left {
+    @include display(flex);
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(flex-end);
+
+  }
+
+  .right {
+    @include display(flex);
+
+    .saveur {
+      text-indent: -9999px;
+      margin-left: 50px;
+      @include transition(transform 0.1s $ease-in-out-circ);
+      &:hover { @include transform(translateY(-46px)); }
+    }
+
+    .container {
+      @include size(auto 45px);
+      overflow: hidden;
+    }
+
+    .febris {
+      @include size(100px 90px);
+      background: url(/images/saveurs/saveur-febris.png) no-repeat center center;
+      background-size: 100px 90px;
+
+    }
+
+    .foo-manchu {
+      @include size(185px 90px);
+      background: url(/images/saveurs/saveur-foo-manchu.png) no-repeat center center;
+      background-size: 185px 90px;
+    }
+
+    .saecularis {
+      @include size(177px 90px);
+      background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
+      background-size: 177px 90px;
+    }
+  }
+
   p {
     margin: 0;
   }

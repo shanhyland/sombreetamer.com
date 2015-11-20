@@ -63,8 +63,99 @@ header {
   flex-direction: row;
   -ms-flex-direction: row; }
 
-footer p {
-  margin: 0; }
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row; }
+  footer .left {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end; }
+  footer .right {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .right .saveur {
+      text-indent: -9999px;
+      margin-left: 50px;
+      -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -moz-transition: -moz-transform 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: transform 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+      footer .right .saveur:hover {
+        -webkit-transform: translateY(-46px);
+        -moz-transform: translateY(-46px);
+        -ms-transform: translateY(-46px);
+        -o-transform: translateY(-46px);
+        transform: translateY(-46px); }
+    footer .right .container {
+      height: 45px;
+      width: auto;
+      overflow: hidden; }
+    footer .right .febris {
+      height: 90px;
+      width: 100px;
+      background: url(/images/saveurs/saveur-febris.png) no-repeat center center;
+      background-size: 100px 90px; }
+    footer .right .foo-manchu {
+      height: 90px;
+      width: 185px;
+      background: url(/images/saveurs/saveur-foo-manchu.png) no-repeat center center;
+      background-size: 185px 90px; }
+    footer .right .saecularis {
+      height: 90px;
+      width: 177px;
+      background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
+      background-size: 177px 90px; }
+  footer p {
+    margin: 0; }
 
 video {
   -webkit-transform: translateX(-50%) translateY(-50%);

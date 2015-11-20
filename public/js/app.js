@@ -7,7 +7,7 @@ var Zepto=function(){function t(t){return null==t?String(t):U[J.call(t)]||"objec
 
 
 },{}],3:[function(require,module,exports){
-require("./../../bower_components/zepto/zepto.js"),require("./../../bower_components/zepto-detect/zepto-detect.js"),console.log($.os),$.os.phone&&$("video source").remove();
+var background,products,saveurs;require("./../../bower_components/zepto/zepto.js"),require("./../../bower_components/zepto-detect/zepto-detect.js"),$.os.phone&&$("video source").remove(),saveurs=$(".saveur"),products=$(".product"),background=$(".background"),background.on("click",function(e){return products.removeClass("active"),background.removeClass("active")}),saveurs.on("click",function(e){var r,o;return e.preventDefault(),r=$(this),o=r.attr("href"),products.removeClass("active"),background.addClass("active"),$(o).addClass("active")});
 
 
 },{"./../../bower_components/zepto-detect/zepto-detect.js":1,"./../../bower_components/zepto/zepto.js":2}]},{},[3])

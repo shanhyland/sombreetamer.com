@@ -1,0 +1,107 @@
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  z-index: 900;
+
+  &.active {
+    display: block;
+  }
+}
+
+.product {
+  @include size(600px auto);
+  background: #0A0A0A;
+  position: absolute;
+  top: 50vh; left: 50vw;
+  margin-left: -300px;
+  margin-top: -507px;
+  z-index: 1000;
+
+  @include transform(translateX(100vw));
+  @include transition(transform 0.5s $ease-in-out-circ);
+
+  &.active {
+    @include transform(translateX(0));
+  }
+
+  img {
+    @include size(600px auto);
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .description {
+    margin: 30px;
+
+    .space-bottom {
+      margin-bottom: 16px;
+    }
+
+    .big {
+      font-size: 1rem;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .left {
+      margin-right: 15px;
+    }
+
+    .right {
+      margin-left: 15px;
+    }
+  }
+}
+
+.inner {
+  @include display(flex);
+  @include flex-direction(column);
+
+
+  > .bottom {
+    @include display(flex);
+    @include flex-direction(column);
+
+    .bottom {
+      @include display(flex);
+    }
+  }
+}
+
+@media (max-height: 1000px) {
+  .inner {
+    @include flex-direction(row);
+
+    .description {
+      margin-left: 0;
+    }
+  }
+
+  .product {
+    @include size(1000px 580px);
+    top: 50vh; left: 50vw;
+    margin-left: -500px;
+    margin-top: -290px;
+
+    img {
+      @include size(auto 550px);
+    }
+  }
+}
+
+.febris-description {
+}

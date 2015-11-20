@@ -1,4 +1,5 @@
 @import 'bourbon';
+@import './products';
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -49,6 +50,7 @@ footer {
 
   .right {
     @include display(flex);
+    z-index: 950;
 
     .saveur {
       text-indent: -9999px;

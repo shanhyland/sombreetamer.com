@@ -60,11 +60,11 @@
     }
 
     .left {
-      margin-right: 15px;
+      margin-right: 30px;
     }
 
-    .right {
-      margin-left: 15px;
+    .left, .right {
+      width: 270px;
     }
   }
 }
@@ -94,9 +94,9 @@
   }
 
   .product {
-    @include size(1000px 580px);
+    @include size(1100px 580px);
     top: 50vh; left: 50vw;
-    margin-left: -500px;
+    margin-left: -550px;
     margin-top: -290px;
 
     img {

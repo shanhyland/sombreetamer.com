@@ -83,6 +83,10 @@ footer {
       background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
       background-size: 177px 90px;
     }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   p {
@@ -171,5 +175,11 @@ a {
   img {
     height: 35px;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  body {
+    padding: 20px;
   }
 }

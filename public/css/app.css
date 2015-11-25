@@ -127,6 +127,142 @@
       height: 550px;
       width: auto; } }
 
+@media screen and (max-width: 1024px) {
+  .inner {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row; }
+    .inner > .top {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center; }
+    .inner .description .left {
+      margin-bottom: 15px; }
+    .inner .description .bottom {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+  section:nth-of-type(1) {
+    margin-top: 30px; }
+  .product {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 80vw;
+    height: auto;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); } }
+
+@media screen and (max-width: 768px) {
+  .inner {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column; }
+    .inner .description .left {
+      margin-bottom: 0px; }
+    .inner .description .bottom {
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-direction: row; }
+  .product {
+    width: 100%; }
+    .product img {
+      margin-top: 15px;
+      height: auto;
+      width: 630px; } }
+
+@media screen and (max-width: 767px) {
+  .inner .description {
+    margin-left: 30px; }
+    .inner .description .bottom {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; }
+  .product img {
+    height: 90vw;
+    width: auto; } }
+
+@media screen and (max-width: 320px) {
+  .inner .description {
+    margin: 15px; }
+    .inner .description .left {
+      margin-bottom: 15px; }
+    .inner .description .left, .inner .description .right {
+      margin-right: 0px;
+      width: 250px; } }
+
 * {
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1); }
@@ -285,6 +421,9 @@ footer {
       width: 177px;
       background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
       background-size: 177px 90px; }
+    @media screen and (max-width: 1024px) {
+      footer .right {
+        display: none; } }
   footer p {
     margin: 0; }
 
@@ -395,3 +534,7 @@ a {
   .contact img {
     height: 35px;
     width: auto; }
+
+@media screen and (max-width: 627px) {
+  body {
+    padding: 20px; } }

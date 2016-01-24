@@ -1,0 +1,17 @@
+body {
+  &.stores {
+    @include flex-direction(row);
+
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.map {
+  @include display(flex);
+  @include flex(1);
+}
+
+.sidebar {
+  width: 200px;
+}

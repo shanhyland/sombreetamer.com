@@ -21,7 +21,7 @@ listings = $ '.listings'
 locations.eachLayer (locale) ->
   properties = locale.feature.properties
 
-  icon = L.icon iconUrl: '/images/marker.png', iconSize: [61, 72], iconAnchor: [30, 36], popupAnchor: [0, -50]
+  icon = L.icon iconUrl: '/images/marker@2x.png', iconSize: [61, 72], iconAnchor: [30, 36], popupAnchor: [0, -50]
 
   locale.setIcon icon
 

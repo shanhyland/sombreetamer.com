@@ -18,6 +18,7 @@
     "zepto-detect": "*"
   },
   "dependencies": {
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "mapbox.js": "~2.2.4"
   }
 }

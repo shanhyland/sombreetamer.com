@@ -1,0 +1,182 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1)
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+body {
+  @include display(flex);
+  @include flex-direction(column);
+
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 0.7rem;
+  min-height: 100vh;
+  line-height: 1rem;
+  margin: 0;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+header {
+  @include display(flex);
+  @include flex(1);
+  @include flex-direction(row);
+}
+
+footer {
+  @include display(flex);
+  @include flex-direction(row);
+
+  .left {
+    @include display(flex);
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(flex-end);
+
+  }
+
+  .right {
+    @include display(flex);
+    z-index: 950;
+
+    .saveur {
+      text-indent: -9999px;
+      margin-left: 50px;
+      @include transition(transform 0.1s $ease-in-out-circ);
+      &:hover { @include transform(translateY(-46px)); }
+    }
+
+    .container {
+      @include size(auto 45px);
+      overflow: hidden;
+    }
+
+    .febris {
+      @include size(100px 90px);
+      background: url(/images/saveurs/saveur-febris.png) no-repeat center center;
+      background-size: 100px 90px;
+
+    }
+
+    .foo-manchu {
+      @include size(185px 90px);
+      background: url(/images/saveurs/saveur-foo-manchu.png) no-repeat center center;
+      background-size: 185px 90px;
+    }
+
+    .saecularis {
+      @include size(177px 90px);
+      background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
+      background-size: 177px 90px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+video {
+  @include transform(translateX(-50%) translateY(-50%));
+
+  background: url(/images/background.jpg) no-repeat;
+  background-size: cover;
+
+  height: auto;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  z-index: -100;
+}
+
+strong {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.bigger {
+  font-size: 0.9rem;
+}
+
+.blurb {
+  @include display(flex);
+  @include flex(1);
+  @include flex-direction(column);
+
+  img {
+    display: block;
+    height: 145px;
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .top {
+    @include display(flex);
+  }
+
+  .bottom {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+
+  .spacer {
+    height: 145px;
+    margin-bottom: 50px;
+  }
+
+  .left, .right {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    margin-left: 50px;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contact {
+  @include display(flex);
+
+  img {
+    height: 35px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  body {
+    padding: 20px;
+  }
+}

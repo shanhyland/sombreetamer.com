@@ -44,7 +44,8 @@ gulp.task('sass', function () {
     .pipe(sass({
       includePaths: [
         'bower_components/bourbon/app/assets/stylesheets',
-        'bower_components/neat/app/assets/stylesheets'
+        'bower_components/neat/app/assets/stylesheets',
+        'bower_components/mapbox.js'
       ]
     })
     .on('error', sass.logError))

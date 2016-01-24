@@ -1348,7 +1348,77 @@ body.stores {
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  background: black; }
 
 .sidebar {
+  width: 240px;
+  height: 100vh;
+  overflow: scroll; }
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -moz-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    margin: 0;
+    padding: 25px;
+    border-bottom: 1px solid #212121;
+    border-right: 1px solid black; }
+    .sidebar li.active {
+      background: #222; }
+    .sidebar li a {
+      -webkit-transition: all 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -moz-transition: all 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: all 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      color: #666;
+      margin-bottom: 5px; }
+  .sidebar li:nth-child(3n+1).active {
+    border-right: 5px solid #8339b2; }
+    .sidebar li:nth-child(3n+1).active a {
+      color: #8339b2; }
+  .sidebar li:nth-child(3n+1) a:hover {
+    color: #8339b2; }
+  .sidebar li:nth-child(3n+2).active {
+    border-right: 5px solid #e33022; }
+    .sidebar li:nth-child(3n+2).active a {
+      color: #e33022; }
+  .sidebar li:nth-child(3n+2) a:hover {
+    color: #e33022; }
+  .sidebar li:nth-child(3n+3).active {
+    border-right: 5px solid #fca435; }
+    .sidebar li:nth-child(3n+3).active a {
+      color: #fca435; }
+  .sidebar li:nth-child(3n+3) a:hover {
+    color: #fca435; }
+
+.leaflet-popup-close-button {
+  display: none; }
+
+.leaflet-popup-content {
+  padding: 0;
   width: 200px; }
+
+.leaflet-popup-content-wrapper {
+  background: #ddd;
+  border-radius: 0;
+  padding: 0; }
+
+.leaflet-popup-content h3 {
+  background-color: #000;
+  display: block;
+  color: #ddd;
+  margin: 0;
+  margin-top: -15px;
+  padding: 10px; }
+
+.leaflet-popup-content div {
+  padding: 10px; }
+
+.leaflet-popup-tip {
+  border-top-color: #ddd; }
+
+.leaflet-container .leaflet-marker-icon {
+  cursor: pointer; }

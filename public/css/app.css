@@ -1303,6 +1303,8 @@ a {
     @media only screen and (max-width: 768px) {
       .blurb .right {
         margin-left: 0; } }
+  .blurb a {
+    text-decoration: underline; }
 
 .contact {
   display: -webkit-box;

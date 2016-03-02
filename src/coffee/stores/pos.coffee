@@ -6,6 +6,25 @@ module.exports = [{
     geometry: {
       type: 'Point',
       coordinates: [
+        -73.569557,
+        45.505337
+      ]
+    },
+    properties: {
+      name: 'Vinum Design'
+      phoneFormatted: '(514)',
+      phone: '514',
+      address: '1480 rue City Councillors',
+      city: 'Montréal',
+      country: 'Canada',
+      postalCode: 'H3A 2E5',
+      state: 'QC'
+    }
+  }, {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [
         -73.616824,
         45.518615
       ]
@@ -158,18 +177,18 @@ module.exports = [{
     geometry: {
       type: 'Point',
       coordinates: [
-        -71.253055,
-        46.782254
+        -71.280904,
+        46.828680
       ]
     },
     properties: {
       name: 'Vinum Grappa'
-      phoneFormatted: '(514)',
-      phone: '514',
-      address: '1261 Avenue Maguire',
+      phoneFormatted: '(418) 650-1919',
+      phone: '418-650-1919',
+      address: '355, rue du Marais',
       city: 'Ville de Québec',
       country: 'Canada',
-      postalCode: 'G1T 1Z2',
+      postalCode: 'G1M 3N8',
       state: 'QC'
     }
   }]

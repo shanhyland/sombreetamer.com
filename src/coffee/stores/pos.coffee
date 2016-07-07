@@ -191,5 +191,43 @@ module.exports = [{
       postalCode: 'G1M 3N8',
       state: 'QC'
     }
+  }, {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [
+        -73.606836,
+        45.476045
+      ]
+    },
+    properties: {
+      name: 'Évelyne Boutique'
+      phoneFormatted: '(514) 903-6554',
+      phone: '514-903-6554',
+      address: '5127 Sherbrooke Ouest',
+      city: 'Montréal',
+      country: 'Canada',
+      postalCode: 'H4A 1T1',
+      state: 'QC'
+    }
+  }, {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [
+        -73.578128 ,
+        45.518320
+      ]
+    },
+    properties: {
+      name: 'Magasin Général Lambert Gratton'
+      phoneFormatted: '(514) 282-4141',
+      phone: '514-282-4141',
+      address: '4051 De Bullion',
+      city: 'Montréal',
+      country: 'Canada',
+      postalCode: 'H2W 2E6',
+      state: 'QC'
+    }
   }]
 }]

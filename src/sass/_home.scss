@@ -81,6 +81,12 @@ footer {
       background-size: 177px 90px;
     }
 
+    .arbor {
+      @include size(97px 90px);
+      background: url(/images/saveurs/saveur-arbor.png) no-repeat center center;
+      background-size: 97px 90px;
+    }
+
     @media screen and (max-width: 1024px) {
       display: none;
     }

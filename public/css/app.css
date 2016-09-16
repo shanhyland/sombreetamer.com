@@ -1202,6 +1202,11 @@ footer {
       width: 177px;
       background: url(/images/saveurs/saveur-saecularis.png) no-repeat center center;
       background-size: 177px 90px; }
+    footer .right .arbor {
+      height: 90px;
+      width: 97px;
+      background: url(/images/saveurs/saveur-arbor.png) no-repeat center center;
+      background-size: 97px 90px; }
     @media screen and (max-width: 1024px) {
       footer .right {
         display: none; } }

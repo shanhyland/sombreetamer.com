@@ -182,6 +182,10 @@ a {
   img {
     height: 35px;
     width: auto;
+
+    &:nth-child(1), &:nth-child(2) {
+      margin-right: 15px;
+    }
   }
 }
 

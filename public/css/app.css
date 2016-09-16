@@ -1322,6 +1322,8 @@ a {
   .contact img {
     height: 35px;
     width: auto; }
+    .contact img:nth-child(1), .contact img:nth-child(2) {
+      margin-right: 15px; }
 
 @media screen and (max-width: 627px) {
   body {

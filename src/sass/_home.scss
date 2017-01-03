@@ -177,14 +177,13 @@ a {
 }
 
 .contact {
-  @include display(flex);
-
   img {
-    height: 35px;
-    width: auto;
+    height: 30px;
+  }
 
-    &:nth-child(1), &:nth-child(2) {
-      margin-right: 15px;
+  a:nth-child(1), a:nth-child(2) {
+    img {
+      margin-right: 25px;
     }
   }
 }

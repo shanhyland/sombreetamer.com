@@ -1309,19 +1309,11 @@ a {
   .blurb a {
     text-decoration: underline; }
 
-.contact {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .contact img {
-    height: 35px;
-    width: auto; }
-    .contact img:nth-child(1), .contact img:nth-child(2) {
-      margin-right: 15px; }
+.contact img {
+  height: 30px; }
+
+.contact a:nth-child(1) img, .contact a:nth-child(2) img {
+  margin-right: 25px; }
 
 @media screen and (max-width: 627px) {
   body {

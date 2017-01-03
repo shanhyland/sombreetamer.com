@@ -193,4 +193,12 @@ a {
   body {
     padding: 20px;
   }
+
+  .blurb {
+    margin-top: 0px;
+  }
+
+  header {
+    @include flex-direction(column);
+  }
 }

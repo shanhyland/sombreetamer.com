@@ -1,6 +1,6 @@
 .leaflet-container {
   background: #fff;
-  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 12px/20px 'Helvetica Neue',Arial,Helvetica,sans-serif;
   color: #404040;
   color: rgba(0, 0, 0, 0.75);
   outline: 0;
@@ -130,10 +130,10 @@
 
 .leaflet-fade-anim .leaflet-popup, .leaflet-fade-anim .leaflet-tile {
   opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear; }
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear; }
 
 .leaflet-fade-anim .leaflet-map-pane .leaflet-popup, .leaflet-fade-anim .leaflet-tile-loaded {
   opacity: 1; }
@@ -485,7 +485,7 @@
 
 .mapbox-modal.active > div {
   z-index: 99999;
-  transition: all 0.2s, z-index 0 0; }
+  transition: all .2s,z-index 0 0; }
 
 .mapbox-modal .mapbox-modal-mask {
   background: rgba(0, 0, 0, 0.5);

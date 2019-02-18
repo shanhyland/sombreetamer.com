@@ -176,6 +176,25 @@ module.exports = [{
     geometry: {
       type: 'Point',
       coordinates: [
+        -73.608788,
+        45.532654
+      ]
+    },
+    properties: {
+      name: 'Peluso Beaubien'
+      phoneFormatted: '(514)',
+      phone: '514',
+      address: '251 Rue Beaubien E',
+      city: 'Montréal',
+      country: 'Canada',
+      postalCode: 'H2S 1R7',
+      state: 'QC'
+    }
+  }, {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [
         -71.280904,
         46.828680
       ]

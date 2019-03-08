@@ -41,6 +41,8 @@ gulp build
 
 ## Deployment
 
+Avant de deployer s'assurer d'avoir commiter sur GitHub
+
 You will need to setup the Droplet with an SSH key: <https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/create-with-openssh/>
 
 S'assurer que le fichier /var/www/video/repo/config est 'configurer' correctement

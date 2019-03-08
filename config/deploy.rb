@@ -5,7 +5,7 @@ set :application, 'sombreetamer.com'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :repo_url, 'https://github.com/hugobast/sombreetamer.com.git'
+set :repo_url, 'https://github.com/shanhyland/sombreetamer.com.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/video/'

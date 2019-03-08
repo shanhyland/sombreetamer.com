@@ -181,7 +181,7 @@ module.exports = [{
       ]
     },
     properties: {
-      name: 'Peluso Beaubien'
+      name: 'Peluso Beaubien666'
       phoneFormatted: '(514)',
       phone: '514',
       address: '251 Rue Beaubien E',

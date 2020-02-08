@@ -27,6 +27,19 @@ npm install
 
 ## Development
 
+### Note concernant Node.js
+On doit utiliser une version de node plus basse que 12, sinon on a un problème avec gulp en version 3.9.1.
+J'ai installé nvm pour régler le probleme.
+Avant de travailler dans ce projet, il faut exécuter la commande
+```bash
+nvm use v8.17.0
+```
+Une fois la job terminé pour recommencer à utiliser la version plus à jour de Node
+```bash
+nvm use node
+```
+
+
 ### Running local node server
 
 ```bash

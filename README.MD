@@ -39,6 +39,11 @@ Une fois la job terminé pour recommencer à utiliser la version plus à jour de
 nvm use node
 ```
 
+Sur Windows le node manager est Nodist
+On dirait par contre qu'il y a un problème quand on essaie de faire matcher la version de npm en utilisant la commande
+```bash
+nodist npm match
+```
 
 ### Running local node server
 

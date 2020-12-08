@@ -87,6 +87,12 @@ footer {
       background-size: 97px 90px;
     }
 
+    .livia {
+      @include size(74px 90px);
+      background: url(/images/saveurs/saveur-livia.png) no-repeat center center;
+      background-size: 74px 90px;
+    }
+
     @media screen and (max-width: 1024px) {
       display: none;
     }

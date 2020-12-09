@@ -1,2 +1,2 @@
 require './home'
-require './stores'
+# require './stores'

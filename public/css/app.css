@@ -1207,9 +1207,9 @@ footer {
       background-size: 97px 90px; }
     footer .right .livia {
       height: 90px;
-      width: 74px;
+      width: 90px;
       background: url(/images/saveurs/saveur-livia.png) no-repeat center center;
-      background-size: 74px 90px; }
+      background-size: 90px 90px; }
     @media screen and (max-width: 1024px) {
       footer .right {
         display: none; } }

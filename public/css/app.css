@@ -1314,12 +1314,11 @@ a {
   .blurb a {
     text-decoration: underline; }
 
-.contact {
-  margin-top: 32px; }
-  .contact img {
-    height: 24px; }
-  .contact a:nth-child(1) img, .contact a:nth-child(2) img {
-    margin-right: 32px; }
+.contact img {
+  height: 24px; }
+
+.contact a:nth-child(1) img, .contact a:nth-child(2) img {
+  margin-right: 32px; }
 
 @media screen and (max-width: 627px) {
   body {

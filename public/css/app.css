@@ -1075,7 +1075,7 @@ body {
   box-sizing: border-box;
   color: white;
   font-family: arial, helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 0.7rem;
   min-height: 100vh;
   line-height: 1rem;
   margin: 0;
@@ -1314,11 +1314,12 @@ a {
   .blurb a {
     text-decoration: underline; }
 
-.contact img {
-  height: 24px; }
-
-.contact a:nth-child(1) img, .contact a:nth-child(2) img {
-  margin-right: 32px; }
+.contact {
+  margin-top: 32px; }
+  .contact img {
+    height: 24px; }
+  .contact a:nth-child(1) img, .contact a:nth-child(2) img {
+    margin-right: 32px; }
 
 @media screen and (max-width: 627px) {
   body {
